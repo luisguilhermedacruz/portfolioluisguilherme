@@ -1,0 +1,112 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    background-image: linear-gradient(to top, var(--bg_white1) 50%, var(--color_font_second) 50%);
+}
+
+.projects .projects_title{
+    margin: 5px 0;
+    font-family: var(--font_second);
+    font-size: 33px;
+    color: var(--color_font_day1);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.projects .projects_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.projects_content .projects_content_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.projects .projects_content .projects_content_items h1{
+    font-family: var(--font_second);
+    color: var(--color_font_day1);
+    font-weight: 400;
+    margin: 20px 0;
+    border: 2px solid var(--color_font_day1);
+    border-width: 2px 0;
+    font-size: 35px;
+}
+
+
+.projects .projects_content .projects_content_items img{
+    border-radius: 30px;
+    width: 160px;
+    height: auto;
+    margin: 0;
+    align-items: center;
+}
+
+.projects .projects_content .projects_content_items .text_item{
+    display: flex;
+    flex-direction: row;
+    color: var(--color_font_day1);
+    font-family: var(--font_second);
+    gap: 20px;
+    align-items: center;
+}
+
+.projects .projects_content .projects_content_items .text_item a{
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid var(--color_font_day1);
+    border-width: 0px 2px;
+    padding: 5px;    
+}
+
+.projects .projects_content .projects_content_items .text_item h2,
+.projects .projects_content .projects_content_items .text_item h3
+ {  
+    font-size: 15px;
+    border-width: 0px 2px;
+    padding: 3px;
+}
+
+
+
+
+
+@media only screen and (min-width: 1024px){
+
+    .projects .projects_content{
+        display: flex;
+        flex-direction: row;
+        gap: 0 80px;
+        margin-top: 110px;
+    }
+
+    .projects .projects_content .projects_content_items_2 img { 
+        margin: 107px 0;
+    }
+
+    .projects .projects_content .projects_content_items_3 img {
+        margin: 112px 0;
+    }
+
+    .projects .projects_content .projects_content_items_3 h2 a{
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects .projects_content .projects_content_items_2 .text_items{
+        display: flex;
+        gap: 20px;
+        align-items: row;
+    }
+
+  
+
+}

@@ -1,0 +1,173 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    background: radial-gradient(circle at 50% 100%, var(--bg_white1) 50%, var(--color_font_second) 50%);
+}
+
+.skills .skills_content_tools{
+    display: none;
+}
+
+.skills_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.skills .skills_content .skills_title {
+    font-family: var(--font_second);
+    font-size: 38px;
+    color: var(--color_font_day1);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    margin: 10px 0 10px 26px;
+}
+
+.skills_content_formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.skills_content_formation .skills_formation_title {
+    font-family: var(--font_second);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--color_font_day1);
+    color: var(--color_font_day1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+.skills_content_formation .formation_one {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font_primary);
+    background-color: var(--color_font_day2);
+    border-radius: 15px;
+    padding: 14px;
+    text-align: center;
+}
+
+.skills_content_formation .formation_one .title_formation {
+    font-size: 18px;
+    color: var(--bg_white2);
+}
+
+.skills_content_formation .formation_one .details_formation {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--bg_white1);
+}
+
+.skills_content_formation .formation_two {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font_primary);
+    background-color: var(--color_font_day2);
+    border-radius: 15px;
+    padding: 14px;
+    text-align: center;
+}
+
+.skills_content_formation .formation_two .title_formation {
+    font-size: 18px;
+    color: var(--bg_white2);
+}
+
+.skills_content_formation .formation_two .details_formation {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--bg_white1);
+}
+
+.skills_content .skills_content_tools_title {
+    font-family: var(--font_second);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--color_font_day1);
+    color: var(--color_font_day1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+.skills .skills_content_tools_day{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.skills_content_tools_day .skills_content_tools_left_day{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    gap: 10px;
+    color: var(--bg_white2);
+    font-weight: 400;
+}
+
+.skills_content_tools_day .skills_content_tools_right_day{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;             
+    gap: 10px;
+    color: var(--bg_white2);
+    font-weight: 400;
+}
+
+
+.skills_content_tools_day .skills_content_tools_left_day .item_left_day {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_font_day2);
+    border-radius: 10px;
+    font-family: var(--font_primary);
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+.skills_content_tools_day .skills_content_tools_left_day .item_left_day img {
+    width: 38px;
+    height: auto;
+}
+
+.skills_content_tools_left_day .item_left_day h2 {
+    font-size: 13px;
+        
+}
+
+.skills_content_tools_day .skills_content_tools_right_day .item_right_day {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_font_day2);
+    border-radius: 10px;
+    font-family: var(--font_primary);
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+.skills_content_tools_day .skills_content_tools_right_day .item_right_day img {
+    width: 38px;
+    height: auto;
+}
+
+.skills_content_tools_right_day .item_right_day h2 {
+    font-size: 13px;
+}
+.skills_content_tools_right_day .item_right_day .learning,
+.skills_content_tools_left_day .item_left_day .learning{
+    font-family: var(--font_second);
+    font-style: italic;
+    font-weight: 600;
+}

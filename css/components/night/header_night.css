@@ -1,0 +1,431 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, var(--bg_black1) 0%, var(--bg_black1) 50%, var(--bg_black2) 50%, var(--bg_black2) 100%);
+    background-size: 100% 100%;
+    width: auto;
+    height: 100vh;
+}
+
+body .portrait{
+    display: none;
+}
+
+.navbar_desktop {
+    display: none;
+}
+
+.button_day {
+    display: none;
+}
+
+header .navbar_mobile {
+    margin: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar_mobile.fixed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 750px;
+    left: 75px;
+    right: 0;
+    z-index: 999;
+    width: 250px;
+    background-color: var(--bg_white2);
+    border: solid 4px var(--bg_white2);
+    border-radius: 30px;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.main_content .title_sub_desktop {
+    display: none;
+}
+
+header .navbar_mobile .navbar_title {
+    margin: 0;
+    font-family: var(--font_primary);
+    color: var(--bg_white1);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 63px;
+    background: var(--bg_black2);
+    border: 6px solid var(--bg_white1);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+header .navbar_mobile .navbar_title.fixed {
+    margin: 0;
+    font-family: var(--font_primary);
+    color: var(--bg_white1);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 23px;
+    background: var(--bg_black2);
+    border: 3px solid var(--bg_white1);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.button_night {
+    margin: 0;
+    background-color: var(--bg_white1);
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button_night.fixed {
+    margin: 10px 0;
+    background-color: var(--bg_white2);
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid var(--bg_black2);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+main .main_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.main_content .title {
+    font-family: var(--font_second);
+    color: var(--bg_white1);
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0 10px;
+    animation: slideInRight 3s ease-out forwards;
+}
+
+
+.main_content .subtitle {
+    font-family: var(--font_second);
+    color: var(--bg_white2);
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    animation: slideInLeft 3s ease-out forwards;
+}
+
+.main_content .subtitle span {
+    color: var(--color_font_day2);
+    font-style: italic;
+}
+
+.main_content .luisguilherme {
+    background-color: transparent;
+    border: 5px solid var(--bg_white1);
+    border-radius: 50%;
+    padding: 10px;
+    animation: fadeIn 6s ease-out forwards, pulse 1.5s ease-in-out 3 4s;
+}
+
+.main_contacts {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.main_contacts .contacts_day {
+    display: none;
+}
+
+.main_contacts .contacts_night {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+body .buttons_desktop_night {
+    display: none;
+}
+
+body .buttons_desktop_day {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    body .portrait{
+        display: none;
+    }
+
+    .navbar_mobile.fixed {
+        display: none;
+    }
+
+    body .buttons_desktop_day {
+        display: none;
+    }
+
+    body .buttons_desktop_night {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
+        animation: fadeIn 4s ease-out forwards;
+        gap: 1px;
+        height: auto;
+        margin: 0 10px 20px 0;
+        align-items: center;
+    }
+
+    body .buttons_desktop_night .logo_menu {
+        margin: 0;
+        font-family: var(--font_primary);
+        color: var(--bg_white1);
+        font-style: italic;
+        font-weight: 900;
+        font-size: 42px;
+        background: var(--bg_black2);
+        border: 3px solid var(--bg_white1);
+        border-radius: 50%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    body .buttons_desktop_night img {
+        width: 55px;
+        height: auto;
+        background: var(--bg_white2);
+        border-radius: 30px;
+        padding: 15px;
+    }
+
+    body .buttons_desktop_night img:hover {
+        background: var(--color_font_day2);
+    }
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    nav .navbar_mobile {
+        display: none;
+    }
+
+    .button_night {
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+    }
+
+    main .main_content {
+        margin: 80px 50px 0 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .main_content .title,
+    .main_content .subtitle {
+        display: none;
+    }
+
+    .main_content .title_sub_desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main_content .title_desktop {
+        font-family: var(--font_second);
+        color: var(--bg_white1);
+        font-size: 35px;
+        text-align: center;
+        font-weight: 500;
+        margin: 0 10px;
+        animation: fadeIn 3s ease-out forwards;
+    }
+
+
+    .main_content .subtitle_desktop {
+        font-family: var(--font_second);
+        color: var(--bg_white2);
+        font-size: 40px;
+        text-align: center;
+        font-weight: 500;
+        animation: fadeIn 3s ease-out forwards;
+    }
+
+    .main_content .subtitle_desktop span {
+        color: var(--color_font_day2);
+        font-style: italic;
+    }
+
+    .main_content .luisguilherme {
+        width: 350px;
+        height: auto;
+        animation: slideInLeft 4s ease-out forwards, pulse 1.5s ease-in-out 3 4s;
+        margin-left: 55px;
+    }
+
+
+    .main_contacts .contacts_day {
+        display: none;
+    }
+
+    .main_contacts .contacts_night {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .main_contacts .contacts_night img {
+        background-color: transparent;
+        border: solid 3px transparent;
+        width: 70px;
+        height: auto;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .main_contacts .contacts_night img:hover {
+        background-color: var(--color_font_day1);
+        border: solid 3px var(--bg_white1);
+        padding: 20px;
+        border-radius: 30px;
+    }
+}
+
+/** @media screen and (orientation: portrait){
+    
+    body .portrait{ 
+        display: flex;  
+        width: auto;
+        height: 100vh;
+        align-items: center;
+        background: linear-gradient(to bottom right, var(--bg_black1) 0%, var(--bg_black1) 50%, var(--bg_black2) 50%, var(--bg_black2) 100%);
+        background-size: 100% 100%;
+    }
+
+  body .portrait h1{
+        text-align: center;
+        font-family: var(--font_primary);
+        color: var(--bg_white1);
+        margin: 0 30px;
+        border: solid 2px var(--bg_white1);
+        border-radius: 30px;
+        padding: 20px;
+    }
+
+
+    body .buttons_desktop_day,
+    body .buttons_desktop_night,
+    header,
+    main,
+    body .menu,
+    body .about,
+    body .skills,
+    body .projects,
+    body .contact {
+
+        display: none;
+    } 
+
+}

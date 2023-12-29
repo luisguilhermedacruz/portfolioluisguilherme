@@ -1,0 +1,71 @@
+
+body .buttons_desktop_night{
+    display: none;
+}
+
+body  .buttons_desktop_day{
+    display: none;
+}
+
+@media only screen and (min-width: 1024px){
+    body .buttons_desktop_night{
+        display: none;
+    }
+    
+    body .buttons_desktop_day{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 20px; 
+        top: 50%; 
+        transform: translateY(-50%);
+        z-index: 9999;   
+        animation: fadeIn 4s ease-out forwards;
+        gap: 1px;
+        height: auto;
+        margin: 20px 10px 20px 0;
+        align-items: center;
+    }
+    
+    body .buttons_desktop_day .logo_menu{
+      margin: 0;
+      font-family: var(--font_primary);
+      color: var(--bg_white1);
+      font-style: italic;
+      font-weight: 900;
+      font-size: 42px;
+      background: var(--bg_black2);
+      border: 3px solid var(--bg_white2);
+      border-radius: 50%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    
+    body .buttons_desktop_day .logo_menu:hover{
+      background:var(--color_font_day2);
+    }
+
+
+    body .buttons_desktop_day img{
+        width: 55px;
+        height: auto;
+        background:var(--bg_black2);
+        border-radius: 30px;
+        padding: 15px;
+    }
+    
+    body .buttons_desktop_day img:hover{
+      background:var(--color_font_day2);
+    }
+    
+    
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1; 
+        }
+      }
+
+}

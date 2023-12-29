@@ -1,0 +1,11 @@
+@import './globals.css';
+@import './variables.css';
+
+@import '../components/night/header_night.css';
+@import '../components/night/menu_night.css';
+@import '../components/night/about_night.css';
+@import '../components/night/shortcut_night.css';
+@import '../components/night/skills_night.css';
+@import '../components/night/projects_night.css';
+@import '../components/night/contacts_night.css';
+

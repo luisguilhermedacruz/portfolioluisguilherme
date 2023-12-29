@@ -1,0 +1,10 @@
+@import './globals.css';
+@import './variables.css';
+
+@import '../components/day/header_day.css';
+@import '../components/day/menu_day.css';
+@import '../components/day/about_day.css';
+@import '../components/day/shortcut_day.css';
+@import '../components/day/skills_day.css';
+@import '../components/day/projects_day.css';
+@import '../components/day/contacts_day.css';

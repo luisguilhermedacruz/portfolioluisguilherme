@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,900&family=Geologica:wght@400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,300;0,400;0,500;0,900;1,600;1,900&display=swap');
+
+:root {
+    --bg_black1: #032232;
+    --bg_black2: #012940;
+    --bg_white1: #EAEEF9;
+    --bg_white2: #D6DFF0;
+    --bg_button_white: #F0F3FA;
+    --color_font_second: #B1C9EF;
+    --font_primary:'Exo 2', sans-serif;
+    --font_second:'Genos' , sans-serif;
+    --color_font_day1: #395886;
+    --color_font_day2: #638ecb; 
+}
