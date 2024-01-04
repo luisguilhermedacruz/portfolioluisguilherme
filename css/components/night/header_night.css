@@ -29,12 +29,7 @@ header .navbar_mobile {
     width: 100%;
 }
 
-header .navbar_mobile.fixed{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-}
+
 
 @keyframes fadeIn {
     from {

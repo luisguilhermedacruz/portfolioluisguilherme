@@ -41,19 +41,6 @@ function changeMode(){
 }
 
 
-var valueScroll = 400;
-
-function showMenuScroll() {
-  var navbarMobile = document.querySelector('.navbar_mobile');
-
-  if (window.scrollY > valueScroll) {
-    navbarMobile.classList.add('fixed');
-  } else {
-    navbarMobile.classList.remove('fixed');
-  }
-}
-
-window.addEventListener('scroll', showMenuScroll);
 
 
 window.addEventListener('load', function() {
