@@ -22,13 +22,12 @@ body .portrait{
 
 header .navbar_mobile {
     display: flex;
-    margin: 35px 0;
+    margin:20px 0;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     width: 100%;
 }
-
 
 
 @keyframes fadeIn {

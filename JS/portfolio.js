@@ -42,7 +42,6 @@ function changeMode(){
 
 
 
-
 window.addEventListener('load', function() {
     const scrolled = window.scrollY;
     const windowHeight = window.innerHeight;
