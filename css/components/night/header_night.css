@@ -5,7 +5,7 @@ header {
     background: linear-gradient(to bottom right, var(--bg_black1) 0%, var(--bg_black1) 50%, var(--bg_black2) 50%, var(--bg_black2) 100%);
     background-size: 100% 100%;
     width: auto;
-    height: 100vh;
+    height: 100%;
 }
 
 body .portrait{
@@ -26,7 +26,7 @@ header .navbar_mobile {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    
+
 }
 
 .navbar_mobile.fixed {
