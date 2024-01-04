@@ -40,8 +40,8 @@ function changeMode(){
     isDayMode = !isDayMode;
 }
 
-var valueScroll = 400;
 
+var valueScroll = 400;
 
 
 function showMenuScroll() {

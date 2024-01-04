@@ -26,8 +26,8 @@ header .navbar_mobile {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    position: relative;
-    left: 75px;
+    left: 0;
+    right: 0;
 }
 
 .navbar_mobile.fixed {
