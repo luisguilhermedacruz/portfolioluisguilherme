@@ -21,12 +21,12 @@ body .portrait{
 }
 
 header .navbar_mobile {
-    margin: 35px;
     display: flex;
+    margin: 35px 0;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    position:fixed;
+    
 }
 
 .navbar_mobile.fixed {
