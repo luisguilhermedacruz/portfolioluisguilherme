@@ -171,3 +171,15 @@
     font-style: italic;
     font-weight: 600;
 }
+
+@media only screen and (min-width: 1024px) {
+    
+    .skills{
+        width: auto;
+        height: 100vh;
+    }
+
+    .skills .skills_content .skills_title{
+        margin-top: 50px;
+    }
+}

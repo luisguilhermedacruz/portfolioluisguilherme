@@ -90,6 +90,11 @@
 
 @media only screen and (min-width: 1024px) {
 
+    .contact{
+        width: auto;
+        height: 100vh;
+    }
+
     .contact .contact_title{
         margin:20px 0;
         font-family: var(--font_second);
@@ -149,8 +154,13 @@
         color: var(--bg_white1);
         font-family: var(--font_primary);
         font-size: 25px;
-        margin-top: 65px;
         font-weight: 400;
+        margin: 90px 0 0 0;
+    }
+
+    .contact footer{
+        margin: 0;
+        padding: 0;
     }
 }
 

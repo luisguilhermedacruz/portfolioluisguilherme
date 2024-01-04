@@ -88,6 +88,17 @@
 
 @media only screen and (min-width: 1024px) {
 
+    .contact {
+        width: auto;
+        height: 100vh;      
+    }
+
+    .contact .contacts{
+        display: none;
+    }
+
+
+
     .contact .contact_title{
         margin:20px 0;
         font-family: var(--font_second);
@@ -97,13 +108,13 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    .contact .contacts .subtitle{
+    .contact .contacts_day .subtitle_day{
         font-family: var(--font_second);
         background-color: transparent;
         padding: 10px;
         border-radius: 30px;
         border: 2px solid var(--bg_white2);
-        color: var(--bg_white1);
+        color: var(--bg_black2);
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         font-weight: 400;
         margin-top:  30px;
@@ -111,21 +122,21 @@
         font-size: 53px;
     }
 
-    .contact .contacts{
+    .contact .contacts_day{
         display: grid;
         flex-direction: column;
         justify-content: center;
         margin: 0;
     }
 
-    .contact .contacts img{
-        background-color: var(--bg_black2);
+    .contact .contacts_day img{
+        background-color: var(--bg_white1);
         padding: 10px;
         border-radius: 10px;
-        border: solid 2px var(--bg_white1);
+        border: solid 2px var(--bg_white2);
         width: 55px;
     }
-    .contact .contacts .contact_right_item h1{
+    .contact .contacts_day .contact_right_item_day h1{
         font-family: var(--font_primary);
         font-size: 45px;
         background-color: var(--bg_white1);
@@ -133,7 +144,7 @@
         padding: 12px;
         border-radius: 0 0 40px 10px;
     }
-    .contact .contacts .contact_left_item h1{
+    .contact .contacts_day .contact_left_item_day h1{
         font-family: var(--font_primary);
         font-size: 45px;
         background-color: var(--bg_white1);
@@ -144,11 +155,16 @@
 
     .contact footer h1{
         text-align: center;
-        color: var(--bg_white1);
+        color: var(--color_font_day1);
         font-family: var(--font_primary);
         font-size: 25px;
-        margin-top: 65px;
         font-weight: 400;
+        margin: 90px 0 0 0;
+    }
+
+    .contact footer{
+        margin: 0;
+        padding: 0;
     }
 }
 

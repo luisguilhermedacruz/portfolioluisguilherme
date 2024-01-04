@@ -99,6 +99,10 @@
         margin-top: 110px;
     }
 
+    .projects .projects_title{
+        margin-top: 20px;
+    }
+
     .projects .projects_content .projects_content_items img { 
         margin: 40px 0;
         width: auto;

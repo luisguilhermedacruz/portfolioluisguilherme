@@ -45,6 +45,9 @@
         flex-direction: column;
         align-items: center;
         gap: 50px;
+        width: auto;
+        height: 100vh;
+
     }
 
     .about_title{
@@ -79,9 +82,4 @@
     }
 
 
-}
-
-
-@media screen and (orientation: portrait){
-    
 }

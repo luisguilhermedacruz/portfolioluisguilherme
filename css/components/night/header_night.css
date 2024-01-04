@@ -225,6 +225,11 @@ body .buttons_desktop_day {
         display: none;
     }
 
+    header {
+        width: auto;
+        height: 100vh;
+    }
+
     .navbar_mobile.fixed {
         display: none;
     }
@@ -377,39 +382,3 @@ body .buttons_desktop_day {
     }
 }
 
-/** @media screen and (orientation: portrait){
-    
-    body .portrait{ 
-        display: flex;  
-        width: auto;
-        height: 100vh;
-        align-items: center;
-        background: linear-gradient(to bottom right, var(--bg_black1) 0%, var(--bg_black1) 50%, var(--bg_black2) 50%, var(--bg_black2) 100%);
-        background-size: 100% 100%;
-    }
-
-  body .portrait h1{
-        text-align: center;
-        font-family: var(--font_primary);
-        color: var(--bg_white1);
-        margin: 0 30px;
-        border: solid 2px var(--bg_white1);
-        border-radius: 30px;
-        padding: 20px;
-    }
-
-
-    body .buttons_desktop_day,
-    body .buttons_desktop_night,
-    header,
-    main,
-    body .menu,
-    body .about,
-    body .skills,
-    body .projects,
-    body .contact {
-
-        display: none;
-    } 
-
-}
