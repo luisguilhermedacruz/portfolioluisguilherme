@@ -43,31 +43,13 @@ function changeMode(){
 
 var valueScroll = 400;
 
-
 function showMenuScroll() {
   var navbarMobile = document.querySelector('.navbar_mobile');
-  var titleMobile = document.querySelector('.navbar_title');
-  var buttonsNight = document.querySelectorAll('.button_night');
-  var buttonsDay = document.querySelectorAll('.button_day');
-  
+
   if (window.scrollY > valueScroll) {
     navbarMobile.classList.add('fixed');
-    titleMobile.classList.add('fixed');   
-    buttonsNight.forEach(function(button) {
-      button.classList.add('fixed');
-    });
-    buttonsDay.forEach(function(button) {
-        button.classList.add('fixed');
-      });
   } else {
     navbarMobile.classList.remove('fixed');
-    titleMobile.classList.remove('fixed');
-    buttonsNight.forEach(function(button) {
-      button.classList.remove('fixed');
-    });
-    buttonsDay.forEach(function(button) {
-        button.classList.remove('fixed');
-      });
   }
 }
 
